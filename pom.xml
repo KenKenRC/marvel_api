@@ -26,21 +26,20 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>mx.com.ejercicio.cliente.rest</groupId>
-			<artifactId>clienteRest</artifactId>
+			<groupId>com.marvel</groupId>
+			<artifactId>clientM</artifactId>
 			<version>1.0.0</version>
 		</dependency>
 		<dependency>
-			<groupId>com.mavel</groupId>
-			<artifactId>clientM</artifactId>
-			<version>1.0.0</version>
+		    <groupId>com.h2database</groupId>
+		    <artifactId>h2</artifactId>
+		    <scope>runtime</scope>
 		</dependency>
 </dependencies>
 
