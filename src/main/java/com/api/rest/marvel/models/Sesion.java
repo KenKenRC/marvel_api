@@ -2,20 +2,8 @@ package com.api.rest.marvel.models;
 
 public class Sesion {
 
-	public String sesion;
 	public String codigo;
-	/**
-	 * @return the sesion
-	 */
-	public String getSesion() {
-		return sesion;
-	}
-	/**
-	 * @param sesion the sesion to set
-	 */
-	public void setSesion(String sesion) {
-		this.sesion = sesion;
-	}
+	public String token;
 	/**
 	 * @return the codigo
 	 */
@@ -28,5 +16,18 @@ public class Sesion {
 	public void setCodigo(String codigo) {
 		this.codigo = codigo;
 	}
+	/**
+	 * @return the token
+	 */
+	public String getToken() {
+		return token;
+	}
+	/**
+	 * @param token the token to set
+	 */
+	public void setToken(String token) {
+		this.token = token;
+	}
+	
 
 }

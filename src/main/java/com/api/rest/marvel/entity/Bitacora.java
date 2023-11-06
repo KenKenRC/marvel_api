@@ -1,9 +1,6 @@
 package com.api.rest.marvel.entity;
 
-import javax.validation.constraints.Size;
-
 import jakarta.persistence.*;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
