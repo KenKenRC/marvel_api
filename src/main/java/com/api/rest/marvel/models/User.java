@@ -3,6 +3,7 @@ package com.api.rest.marvel.models;
 public class User {
 	public String usuario;
 	public String pass;
+	
 	/**
 	 * @return the usuario
 	 */
