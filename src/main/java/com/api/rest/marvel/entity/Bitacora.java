@@ -1,5 +1,7 @@
 package com.api.rest.marvel.entity;
 
+import javax.validation.constraints.Size;
+
 import jakarta.persistence.*;
 
 import lombok.AllArgsConstructor;
@@ -21,6 +23,10 @@ public class Bitacora {
 	@Column(nullable = false)
 	private String fecha;
 	private String service;
+	
+	@Column(length = 100000)
+	private String response;
+	
 	/**
 	 * @return the id
 	 */
@@ -56,6 +62,18 @@ public class Bitacora {
 	 */
 	public void setService(String service) {
 		this.service = service;
+	}
+	/**
+	 * @return the response
+	 */
+	public String getResponse() {
+		return response;
+	}
+	/**
+	 * @param response the response to set
+	 */
+	public void setResponse(String response) {
+		this.response = response;
 	}
 	
 }
