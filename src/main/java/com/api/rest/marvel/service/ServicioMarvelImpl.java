@@ -24,11 +24,14 @@ public class ServicioMarvelImpl implements ServicioMarvel {
 		MarvelConnection connection = new MarvelConnection();
 		Personajes personajes = new Personajes();
 		CharactersResponse responses = null;
+		String service ="";
 		try {
 			if(id==0) {
 				responses = connection.getComicCharacters();
+				service ="/characters";
 			}else {
 				responses = connection.getComicCharactersId(id);
+				service ="/characterId";
 			}
 
 			if(responses!=null && responses.getCode().equals("200")) {
@@ -62,7 +65,7 @@ public class ServicioMarvelImpl implements ServicioMarvel {
 
 			Gson gson = new Gson();
 			String json = gson.toJson(personajes);
-			servicioBitacora.guardarBitacora("/characters", json);
+			servicioBitacora.guardarBitacora(service, json);
 
 		} catch (Exception e) {
 			personajes.setCodigo("3");
